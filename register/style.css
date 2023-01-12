@@ -1,0 +1,95 @@
+body {
+	background-image: url("../img/bg/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.main_frame {
+	margin-top: 70px !important;
+	margin-bottom: 50px !important;
+	max-width: 660px;
+	margin: 0 auto 0 auto;
+	overflow-x: hidden;
+	background-color: rgba(55, 58, 64, .8);
+	box-shadow: 0px 0px 5px #fff;
+	border-radius: 10px;
+}
+.container {
+	max-width: 660px !important;
+	padding-bottom: 16px;
+}
+#myForm fieldset:not(:first-of-type) {
+	display: none;
+}
+.progress-bar {
+	background-color: #5fb73b !important;
+}
+table td, div p, div {
+	font-family: 'Open Sans', sans-serif;
+}
+h2, h3 {
+	color: #fff !important;
+	margin-bottom: 24px;
+}
+h2 {
+	font-size: 20px;
+}
+label {
+	font-weight: 300;
+	font-size: 1.5rem;
+	padding-top: 0.5rem;
+	color: #fff;
+}
+a {
+	color: #00b7ff !important;
+}
+a:hover {
+	color: #000000;
+}
+select.form-control {
+	height: 3.5rem;
+}
+.first {
+	padding-top: 10px;
+}
+.last {
+	padding-bottom: 10px;
+}
+.btn-primary, .btn-primary:visited {
+	background-color: #5fb73b; border-color: #5fb73b;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.focus:active, .btn-primary:active:focus, .btn-primary:active:hover, .open > .btn-primary.dropdown-toggle.focus, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle:hover, .btn-primary:disabled:hover, .btn-primary:disabled:active, .btn-primary:disabled:focus, .btn-primary.disabled:hover, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled {
+	background-color: #5fb73b; border-color: #5fb73b;
+}
+.has-danger .checkbox, .has-danger .checkbox-inline, .has-danger .form-control-label, .has-danger .radio, .has-danger .radio-inline, .has-danger .text-help, .has-danger.checkbox label, .has-danger.checkbox-inline label, .has-danger.radio label, .has-danger.radio-inline label {
+	color: #a94442;
+}
+.help-block {
+	color: #d9534f;
+}
+.row {
+	margin-left: 0px !important; margin-right: 0px !important;
+}
+#Address2_label {
+	visibility: hidden;
+}
+
+
+@media screen and (min-width: 600px) {
+	.form-group {
+		padding-left: 30px;
+		padding-right: 30px;
+	}	
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background-image: url("../img/bg/bgm.png");
+	}
+	.titik {
+		display: none;
+	}
+	.main_frame {
+	margin-top: 50px!important;
+	margin-bottom: 50px!important;
+	}
+}
