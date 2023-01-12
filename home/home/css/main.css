@@ -1,0 +1,522 @@
+/* ----------------------------------
+
+Name: main.css
+Version: 1.0
+
+-------------------------------------
+
+Table of contents
+        
+    01. Navbar
+    02. Slider
+    03. About us
+    04. sponsor
+    05. Some Facts
+    06. game
+    07. gallery
+    08. Blog
+    09. Contact
+    10. Footer
+*/
+body {
+    font-family: 'Muli', sans-serif;
+    min-height: 100%;
+}
+
+/* ==========================
+   [01]. Navbar
+========================== */
+.navbar {
+    background: #373a40 !important;
+    padding: 25px 0;
+}
+
+.navbar .nav-item {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.navbar .nav-item .nav-link {
+    color: #eeeeee;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #ffffff;
+}
+#login {
+    margin: -2px 0px;
+    font-size: 20px;
+}
+
+/* ==========================
+   [02]. Slider
+========================== */
+.slider {
+    background: url('../img/bg/bgcom.png') center center no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100% 100%;
+    height: calc(115vh - 92px);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.slider .particels {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cd-headline p {
+    font-family: 'Muli', sans-serif !important;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.animated-headlines .cd-headline span {
+    font-size: 28px;
+    font-family: 'Muli', sans-serif !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.slider .left-content .btn {
+    border: 2px solid #e0a80d;
+    border-radius: 35px;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 20px;
+    text-decoration: none;
+    z-index: 200;
+}
+
+/* ==========================
+   [05]. Some Facts
+========================== */
+
+.timer {
+    padding: 70px 0 20px 0;
+    color: #ffffff;
+    background: #2d2e2e;
+}
+
+#headlinecount {
+    font-family: 'Muli', sans-serif !important;
+    font-size: 42px;
+    color: #e0a80d;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+}
+#countdown ul {
+    padding: 0;
+}
+#countdown ul li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+#countdown ul li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+.emoji {
+    display: none;
+    padding: 1rem;
+}
+
+.emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  #headlinecount {
+    font-size: 24px;
+  }
+  
+  #countdown ul li {
+    font-size: 1.125rem;
+    padding: .75rem;
+  }
+  
+  #countdown ul li span {
+    font-size: 42px;
+  }
+}
+
+/* ==========================
+   [06]. game
+========================== */
+
+.game {
+    padding: 50px 0 0 0;
+    background: #2d2e2e;
+}
+
+.game h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #e0a80d;
+    margin-bottom: 40px;
+}
+
+.game .single-game-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.game-name {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 20px
+}
+
+/* ==========================
+   [03]. About Me
+========================== */
+#about {
+    padding-top: 150px;
+}
+.about-us {
+    padding: 50px 0;
+    background: #2d2e2e;
+}
+
+.about-us img {
+    padding-right: 50px;
+}
+
+.about-us h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #e0a80d;
+}
+
+.about-us p {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    color: #bac8d3;
+    line-height: 28px;
+    margin: 20px 10px 40px 0;
+}
+
+/* ==========================
+   [04]. sponsor
+========================== */
+.sponsor {
+    padding-top: 100px;
+    padding-bottom: 10px;
+    background: #2d2e2e;
+}
+.sponsor h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #e0a80d;
+    padding-bottom: 10px;
+}
+.section-padding {
+    padding: 20px 0;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 4%;
+}
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #878787 !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.owl-dot.active {
+    background-color: #000 !important;
+}
+.owl-item img {
+    height: 200px;
+    width: 200px;
+}
+
+
+/* ==========================
+   [07]. gallery
+========================== */
+.gallery {
+    background: #2d2e2e;
+    padding: 130px 0 50px 0;
+}
+
+.gallery h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #e0a80d;
+}
+
+/* Image */
+.gallery .carousel-inner .carousel-item .colon {
+    margin: 30px 0 20px 0;
+}
+
+.gallery .carousel-inner .carousel-item .gallery-pic {
+    margin: 30px 0 20px 0;
+    width: 800px;
+}
+
+.gallery .carousel-inner .carousel-item p {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.gallery .carousel-indicators {
+    display: none !important;
+}
+
+.gallery .carousel-indicators li {
+    background-color: #b8b7b7;
+    border-radius: 30px;
+    height: 4px;
+    width: 40px;
+}
+
+
+.gallery .carousel-indicators .active {
+    background-color: #ffffff;
+}
+
+.gallery .icon {
+  height: 40px;
+  width: 40px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  font-size: 30px;
+  background-image: none;
+  color: #ffffff
+}
+
+
+
+/* ==========================
+   [09]. Contact
+========================== */
+
+.contact {
+    padding: 0 0 50px 0;
+    background: #2d2e2e;
+}
+
+.contact h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #e0a80d;
+    margin-bottom: 40px;
+}
+.contact .container a {
+    text-decoration: none;
+}
+.contact .container span{
+    color: #FFF;
+    font-size: 72px;
+    display: inline-block;
+    padding: 20px;
+}
+
+
+/* ==========================
+   [10]. Footer
+========================== */
+.footer {
+    background: #242527;
+}
+
+ .footer .social-icons span{
+    color: #e0a80d;
+    padding: 0 5px;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+/* ==========================
+   [11]. Media
+========================== */
+/*Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.99px) {
+    /* Slider*/
+    .slider {
+        height: calc(100vh - 80px);
+        margin-top: 80px;
+        background: url('../img/bg/bgm.png') center center no-repeat;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100% 100%;
+    }
+    .slider img {
+        display: none;
+    }
+    .cd-headline p {
+        font-size: 42px;
+        font-family: 'Muli', sans-serif !important;
+        font-weight: 999;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .navbar {
+        padding: 20px;
+    }
+
+    .animated-headlines .cd-headline span {
+        font-size: 30px;
+    }
+
+    /* About Me */
+    .about-us {
+        padding: 10px 25px;
+    }
+    .about-us img {
+        margin-bottom: 30px;
+    }
+
+    .timer .items h4 {
+        margin-bottom: 30px;
+    }
+    .sponsor {
+    padding-top: 50px;
+    }
+    .gallery {
+    background: #2d2e2e;
+    padding: 50px 0;
+    }
+    .owl-item img {
+        height: 100px;
+        width: 200px;
+    }
+    .contact .info {
+        padding: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    /*gallery*/
+    .gallery .carousel-inner .carousel-item .gallery-pic {
+    margin: 30px 0 20px 0;
+    max-width: 300px;
+    }
+
+    /*contact*/
+    .contact .container span{
+    color: #FFF;
+    font-size: 45px;
+    display: inline-block;
+    padding: 10px;
+    }    
+}
+
+
+
+
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+     /* Slider*/
+     .slider {
+        height: calc(100vh - 80px);
+        margin-top: 80px;
+     }
+
+    .slider .left-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .animated-headlines .cd-headline span {
+        font-size: 30px;
+    }
+
+    /* About Me */
+    .about-us img {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    /*gallery*/
+    .gallery .carousel-inner .carousel-item .gallery-pic {
+    margin: 30px 0 20px 0;
+    max-width: 350px;
+    }
+
+    .timer .items h4 {
+        margin-bottom: 30px;
+    }
+    
+    .contact .info {
+        padding: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+    /*contact*/
+    .contact .container .row span{
+    color: #e0a80d;
+    font-size: 55px;
+}
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .animated-headlines .cd-headline span {
+        font-size: 30px;
+    }
+
+    .slider .left-content {
+        padding: 140px 0;
+    }
+
+    .timer .items h4 {
+        margin-bottom: 30px;
+    }
+    .gallery .carousel-inner .carousel-item .gallery-pic {
+    margin: 30px 0 20px 0;
+    width: 500px;
+}
+
+    .about-us img {
+        display: none;
+    }
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
