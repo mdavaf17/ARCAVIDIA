@@ -41,7 +41,7 @@
         <!-- ===== Start Navbar ===== -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="../home/img/ARCAVIDIA__4_-removebg-preview.png" width=100 height=100 alt=""></a>
+                <a class="navbar-brand" href="#"><img src="../home/img/logo.png" width=100 height=100 alt=""></a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -137,7 +137,7 @@
                         </div>
                         <div class="single-game-item">
                             <a href="register/index.php">
-                            <img src="../home/img/game/cp2.png" class="img-fluid">
+                            <img src="../home/img/competition/cp2.png" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
                         </div>
                         <div class="single-game-item">
                             <a href="register/index.php">
-                            <img src="../home/img/game/ds2.png" alt="" class="img-fluid">
+                            <img src="../home/img/competition/ds2.png" alt="" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="single-game-item">
                             <a href="register/index.php">
-                                <img src="../home/img/game/flag2.png" class="img-fluid">
+                                <img src="../home/img/competition/flag2.png" class="img-fluid">
                             </a>                            
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                         </div>
                         <div class="single-game-item">
                             <a href="register/index.php">
-                                <img src="../home/img/game/uiux2.png" class="img-fluid">
+                                <img src="../home/img/competition/uiux2.png" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                     <div class="col-md-1">
                     </div>
                     <div class="col-md-3">
-                        <img src="../home/img/ARCAVIDIA__4_-removebg-preview.png" width=500 height=500 alt="" class="img-fluid">
+                        <img src="../home/img/logo.png" width=500 height=500 alt="" class="img-fluid">
                     </div>
                     <div class="col-md-8">
                         <h2>About</h2>
