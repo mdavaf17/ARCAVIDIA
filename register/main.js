@@ -107,31 +107,22 @@ function validateForm() {
         return false;
     }
 
-    if (fullnameang1 == "" ) {
-        alert("Masukkan Nama Lengkap Anggota Tim 1!");
-        return false;
+    if (competition == "UI/UX Design") {
+        if (fullnameang1 == "" ) {
+            alert("Masukkan Nama Lengkap Anggota Tim 1!");
+            return false;
+        }
+        if (emailang1 == "" ) {
+            alert("Masukkan Nama Lengkap Anggota Tim 1!");
+            return false;
+        }
+        if (kartuang1 == "") {
+            alert("Lengkapi Kartu Identitas Anggota Tim 1!");
+            return false;
+        }
     }
-    if (emailang1 == "" ) {
-        alert("Masukkan Nama Lengkap Anggota Tim 1!");
-        return false;
-    }
-    if (kartuang1 == "") {
-        alert("Lengkapi Kartu Identitas Anggota Tim 1!");
-        return false;
-    }
+    
 
-    if (fullnameang2 == "" ) {
-        alert("Masukkan Nama Lengkap Anggota Tim 2!");
-        return false;
-    }
-    if (emailang2 == "" ) {
-        alert("Masukkan Nama Lengkap Anggota Tim 2!");
-        return false;
-    }
-    if (kartuang2 == "") {
-        alert("Lengkapi Kartu Identitas Anggota Tim 2!");
-        return false;
-    }
 
     if (email == "") {
         alert("Masukkan Alamat Email!");

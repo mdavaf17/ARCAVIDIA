@@ -207,7 +207,7 @@
 			</div>
 
 			<div class="form-group row form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1" name="syaratketentuan" value="setuju" onchange="activateButton(this)">
+				<input type="checkbox" class="form-check-input" id="syaratketentuan" name="syaratketentuan" value='1' onchange="activateButton(this)">
 				<label class="form-check-label" for="exampleCheck1">Saya setuju dengan <a href="#" target="_blank">syarat dan ketentuan</a></label>
 			</div>
 			
