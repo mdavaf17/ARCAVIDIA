@@ -1,3 +1,49 @@
+<?php
+	session_start();
+	include '../database_connector.php';
+
+if (isset($_POST['submit']))
+{	
+	$email = $_POST['email'];
+	$password = $_POST['password'];
+	$result = mysqli_query($koneksi, "SELECT * FROM `peserta` WHERE emailteam = '$email'");
+
+	if (mysqli_num_rows($result) > 0)
+	{
+		$row = mysqli_fetch_assoc($result);
+		if (password_verify($password, $row["password"])) {
+			$_SESSION['competition'] = $row['competition'];
+			$_SESSION['teamname'] = $row['teamname'];
+
+			$namat = $_SESSION['teamname'];
+			$competition = $_SESSION['competition'];
+			
+			echo "
+			<script>
+				alert('Anda Berhasil Login $namat di Kompetisi $competition!');
+				window.location.href='dashboardpeserta.php';
+			</script>
+			";
+		}
+		else {
+			echo "
+			<script>
+				alert('Password Anda Salah!');
+			</script>
+			";
+		}
+	}
+	else
+	{
+		echo "
+		<script>
+			alert('Tidak Ada Akun yang Cocok');
+		</script>
+		";
+	}
+}
+?>
+
 <!doctype html>
 <html lang="en">
 	<head>
