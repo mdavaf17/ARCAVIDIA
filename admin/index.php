@@ -1,27 +1,22 @@
 <?php
-	session_start();
-	include '../database_connector.php';
+session_start();
+include '../database_connector.php';
 
 if (isset($_POST['submit']))
 {	
-	$email = $_POST['email'];
+	$nim = $_POST['nim'];
 	$password = $_POST['password'];
-	$result = mysqli_query($koneksi, "SELECT * FROM `peserta` WHERE emailteam = '$email'");
+	$result = mysqli_query($koneksi, "SELECT * FROM `admin` WHERE nim = '$nim'");
 
 	if (mysqli_num_rows($result) > 0)
 	{
 		$row = mysqli_fetch_assoc($result);
 		if (password_verify($password, $row["password"])) {
-			$_SESSION['competition'] = $row['competition'];
-			$_SESSION['teamname'] = $row['teamname'];
-
-			$namat = $_SESSION['teamname'];
-			$competition = $_SESSION['competition'];
+			$_SESSION['nim'] = $nim;
 			
 			echo "
 			<script>
-				alert('Anda Berhasil Login $namat di Kompetisi $competition!');
-				window.location.href='dashboardpeserta.php';
+				window.location.href='dashboard_admin.php';
 			</script>
 			";
 		}
@@ -46,10 +41,10 @@ if (isset($_POST['submit']))
 
 <!doctype html>
 <html lang="en">
-	<head>
-	<title>Login | ARCAVIDIA</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+  <title>Login Admin | ARCAVIDIA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
@@ -70,7 +65,7 @@ if (isset($_POST['submit']))
 				<form method="POST" class="login-form" autocomplete="on">
 		      		<div class="form-group">
 		      			<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-		      			<input type="text" name="email" autocomplete="on" class="form-control" placeholder="Email" required>
+		      			<input type="text" name="nim" autocomplete="on" class="form-control" placeholder="NIM" required>
 		      		</div>
 	            <div class="form-group">
 	            	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-lock"></span></div>
@@ -88,12 +83,8 @@ if (isset($_POST['submit']))
 	            	<button type="submit" name="submit" class="btn form-control btn-primary rounded submit px-3">LOGIN</button>
 	            </div>
 	          </form>
-	          <div class="w-100 text-center mt-4 text">
-	          	<p class="mb-0">Don't have an account?</p>
-		          <a href="../register/index.php">Sign Up</a>
-	          </div>
-	        </div>
-				</div>
+	      		</div>
+			</div>
 			</div>
 		</div>
 	</section>
