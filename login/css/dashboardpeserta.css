@@ -1,0 +1,300 @@
+/* ----------------------------------
+
+Name: main.css
+Version: 1.0
+
+-------------------------------------
+
+Table of contents
+        
+    01. Navbar
+    02. Welcome
+    03. About us
+    04. sponsor
+    05. Some Facts
+    06. game
+    07. gallery
+    08. Blog
+    09. Contact
+    10. Footer
+*/
+html {
+  height: 100%;
+}
+body {
+    font-family: 'Muli', sans-serif;
+    min-height: 100%;
+    background-color: #242527;
+}
+
+/* ==========================
+   [01]. Navbar
+========================== */
+.navbar {
+    background: #373a40 !important;
+    padding: 25px 0;
+}
+
+.navbar .navbar-brand img {
+    height: 50px;
+}
+
+.navbar .nav-item {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.navbar .nav-item .nav-link {
+    color: #eeeeee;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #ffffff;
+}
+#login {
+    margin: -2px 0px;
+    font-size: 20px;
+}
+
+/* ==========================
+   [02]. welcome
+========================== */
+.welcome {
+    background-color: #242527;
+    height: 120px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome .container h2 {
+    margin-top: 190px;
+    font-size: 50px;
+    font-weight: 800;
+    color: #FFF;
+}
+
+/* ==========================
+   [02]. Pembayaran
+========================== */
+.pembayaran {
+    background-color: #2d2e2e;
+    height: calc(70vh - 92px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+.pembayaran .container table {
+    width: 80%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 26px;
+    color: #FFF;
+    border: 2px solid #ccc;
+}
+.selang1 {
+    background-color: #373a40 !important;
+}
+.selang2 {
+    background-color: #525863 !important;
+}
+.fa-check-square, .fa-hourglass-half, .fa-times-circle, .fa-whatsapp {
+    color: #FFF;
+    font-size: 36px;
+}
+.fa-upload {
+    color: #fffb00;
+    font-size: 24px;
+}
+
+/* ==========================
+   [09]. Contact
+========================== */
+
+.contact {
+    padding: 50px 0 70px 0;
+    background: #2d2e2e;
+}
+
+.contact h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #e0a80d;
+    margin-bottom: 60px;
+}
+
+.contact .info p {
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+    color: #eee;
+}
+.contact .container a {
+    text-decoration: none;
+}
+.contact .container span{
+    color: #FFF;
+    font-size: 60px;
+    display: inline-block;
+    letter-spacing: 40px;
+}
+
+
+/* ==========================
+   [10]. Footer
+========================== */
+.footer {
+    padding: 10px 0;
+    background: #242527;
+}
+
+ .footer .social-icons span{
+    color: #e0a80d;
+    padding: 0 5px;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 20px;
+}
+
+/* ==========================
+   [11]. Media
+========================== */
+/*Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.99px) {
+    /* welcome*/
+    .welcome {
+        height: calc(100vh - 80px);
+        margin-top: 80px;
+    }
+    .welcome img {
+        display: none;
+    }
+    .cd-headline p {
+        font-size: 42px;
+        font-family: 'Muli', sans-serif !important;
+        font-weight: 999;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .navbar {
+        padding: 20px;
+    }
+
+    .animated-headlines .cd-headline span {
+        font-size: 30px;
+    }
+    /* ==========================
+       [02]. Pembayaran
+    ========================== */
+    .pembayaran {
+        height: calc(50vh - 92px);
+        margin-top: 90px;
+    }
+    .pembayaran .container table {
+        font-size: 16px;
+        width: 100%;
+    }
+    .fa-check-square, .fa-hourglass-half, .fa-times-circle, .fa-whatsapp {
+        font-size: 28px;
+    }
+    .fa-upload {
+    color: #fffb00;
+    font-size: 28px;
+    }
+    .contact .info {
+        padding: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+    /*contact*/
+    .contact .container span{
+    font-size: 45px;
+    display: inline-block;
+    letter-spacing: 20px;
+    }
+}
+
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+     /* welcome*/
+    .welcome .left-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .animated-headlines .cd-headline span {
+        font-size: 30px;
+    }
+
+    /* About Me */
+    .about-us img {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    /*gallery*/
+    .gallery .carousel-inner .carousel-item .gallery-pic {
+    margin: 30px 0 20px 0;
+    max-width: 350px;
+    }
+
+    .timer .items h4 {
+        margin-bottom: 30px;
+    }
+    /* ==========================
+   [02]. welcome
+    ========================== */
+    .welcome {
+        height: 60px;
+     }
+    .welcome .container h2 {
+        font-size: 46px;
+        margin-top: 100px;
+    }
+    .contact .info {
+        padding: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+    /*contact*/
+    .contact .container .row span{
+    color: #e0a80d;
+    font-size: 55px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .animated-headlines .cd-headline span {
+        font-size: 30px;
+    }
+
+    .welcome .left-content {
+        padding: 140px 0;
+    }
+
+    .timer .items h4 {
+        margin-bottom: 30px;
+    }
+    .gallery .carousel-inner .carousel-item .gallery-pic {
+    margin: 30px 0 20px 0;
+    width: 500px;
+}
+
+    .about-us img {
+        display: none;
+    }
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
