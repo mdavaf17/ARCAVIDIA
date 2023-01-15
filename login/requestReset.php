@@ -30,17 +30,17 @@ if (isset($_POST['reset']))
 
 		try {
 			//Server settings
-		    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-		    $mail->isSMTP();                                            //Send using SMTP
+		    $mail->SMTPDebug = 0;                      //Enable verbose debug output
+		    $mail->isMail();                                            //Send using SMTP
 		    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
 		    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-		    $mail->Username   = 'emailku@gmail.com';                     //SMTP username
-		    $mail->Password   = 'inipasswordku';                               //SMTP password
+		    $mail->Username   = 'emailsaya@gmail.com';                     //SMTP username
+		    $mail->Password   = 'passwordsaya';                               //SMTP password
 		    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
 		    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 		    //Recipients
-		    $mail->setFrom('txkomputer1@gmail.com', 'ARCAVIDIA');
+		    $mail->setFrom('arcavidia@gmail.com', 'ARCAVIDIA');
 		    $mail->addAddress("$email");     //Add a recipient
 		    $mail->addReplyTo('no-reply@gmail.com', 'NO Reply');
 

@@ -209,7 +209,7 @@ if (mysqli_num_rows($result) > 0) {
                               <th scope='row'>SATU ORANG PERWAKILAN Join Grup Peserta ARCAVIDIA 2023</th>
                               <td class='text-center'>
                                 <a href='#'>
-                                    <i class='fab fa-whatsapp'></i>
+                                    <i class='fab fa-line'></i>
                                 </a>
                               </td>
                             </tr>
@@ -233,7 +233,7 @@ if (mysqli_num_rows($result) > 0) {
                               <th scope='row'>SATU ORANG PERWAKILAN Join Grup Peserta ARCAVIDIA 2023</th>
                               <td class='text-center'>
                                 <a href='#'>
-                                    <i class='fab fa-whatsapp'></i>
+                                    <i class='fab fa-line'></i>
                                 </a>
                               </td>
                             </tr>
@@ -245,7 +245,7 @@ if (mysqli_num_rows($result) > 0) {
                               <th scope='row'>SATU ORANG PERWAKILAN Join Grup Peserta ARCAVIDIA 2023</th>
                               <td class='text-center'>
                                 <a href='#'>
-                                    <i class='fab fa-whatsapp'></i>
+                                    <i class='fab fa-line'></i>
                                 </a>
                               </td>
                             </tr>

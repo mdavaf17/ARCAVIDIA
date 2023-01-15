@@ -96,7 +96,7 @@
                                         </span>
                                     </h1>
                                 </div>
-                                <a href="register/index.php" class="btn">
+                                <a href="../register" class="btn">
                                     Daftar Sekarang!</a>
                             </div>
                         </div>
