@@ -19,11 +19,11 @@ Website pendaftaran lomba yang dibuat untuk memenuhi Tugas Besar ARC 2023.
 3. Akses website melalui http://localhost/ARCAVIDIA/home/
 
 ## Pembagian Tugas
-1. [Chika](https://github.com/auraleaas) (membuat halaman home)
-2. [Yusuf Arsan Sandi](https://github.com/Yusufarsan) (membuat front-end sistem login dan register)
-3. [Saad Abdul Hakim](https://github.com/saadabha) (membuat back-end sistem login dan register)
-4. [Muhammad Fadhli](https://github.com/Shadepar) (membuat halaman dashboard peserta)
-5. [Muhammad Dava Fathurrahman](https://github.com/mdavaf17) (membuat sistem admin)
+1. [Auralea Alvinia Syaikha | 19622294](https://github.com/auraleaas) (membuat halaman home)
+2. [Yusuf Ardian Sandi | 19622054](https://github.com/Yusufarsan) (membuat front-end sistem login dan register)
+3. [Sa'ad Abdul Hakim | 19622131](https://github.com/saadabha) (membuat back-end sistem login, register, forget password)
+4. [Muhammad Fadhli | 16522081](https://github.com/Shadepar) (membuat halaman dashboard peserta)
+5. [Muhammad Dava Fathurrahman | 19622160](https://github.com/mdavaf17) (membuat sistem admin dan sistem kode OTP, mengatur kolaborasi github, serta deploy ke hosting)
 
 ## Screenshot Website
 
@@ -31,7 +31,7 @@ Website pendaftaran lomba yang dibuat untuk memenuhi Tugas Besar ARC 2023.
 
 ![registerpage.png](https://i.ibb.co/SKVYt8p/image.png)
 
-![register.png](https://i.ibb.co/k9XFGSD/image.png)
+![registerpage.png](https://i.ibb.co/k9XFGSD/image.png)
 
 ![loginpage.png](https://i.ibb.co/hK0YzJ6/image.png)
 
@@ -47,3 +47,6 @@ Website pendaftaran lomba yang dibuat untuk memenuhi Tugas Besar ARC 2023.
 
 ## Published
 https://arcavidia.my.id
+
+#### Catatan:
+1. Akun admin didaftarkan manual (insert ke database) dengan enkripsi php password_hash
