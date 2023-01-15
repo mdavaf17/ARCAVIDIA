@@ -1,3 +1,42 @@
+<?php 
+
+include '../database_connector.php';
+
+if (!isset($_GET["code"])) {
+	exit("Url Tidak Valid");
+}
+
+$code = $_GET["code"];
+
+$getEmailQuery = mysqli_query($koneksi, "SELECT email FROM otp WHERE code='$code'");
+if (mysqli_num_rows($getEmailQuery)==0) {
+	exit("URL Tidak Valid");
+}
+
+if (isset($_POST["submit"])) {
+	$newpassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+	$row = mysqli_fetch_array($getEmailQuery);
+	$email = $row["email"];
+
+	$query = mysqli_query($koneksi, "UPDATE peserta SET password='$newpassword' WHERE emailteam ='$email'");
+
+	if ($query) {
+		$query = mysqli_query($koneksi, "DELETE FROM otp WHERE code='$code'");
+		echo "
+		<script>
+			alert('Berhasil Membarui Password!');
+			window.location.href='index.php';
+		</script>
+		";
+	}
+	else {
+		exit("Terjadi Kesalahan!");
+	}
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
