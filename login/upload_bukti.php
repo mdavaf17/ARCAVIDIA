@@ -26,7 +26,7 @@ if (isset($_POST['upload'])) {;
 			if ($status_update) {
 				echo "
 				<script>
-					alert('Berhasil Mengirim Bukti, Kami Akan Segera Memverifikasi!');
+					alert('Berhasil Mengirim Bukti Pembayaran, Kami Akan Segera Memverifikasi!');
 					window.location.href='dashboardpeserta.php';
 				</script>";
 			}
