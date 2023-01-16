@@ -11,7 +11,7 @@ Website pendaftaran lomba yang dibuat untuk memenuhi Tugas Besar ARC 2023.
 7. Update akun peserta
 8. Delete akun peserta
 
-## How to Set Up
+## Cara menjalankan aplikasi
 1. Install [XAMPP](https://www.apachefriends.org/download.html)
 2. Clone repository ini pada folder htdocs (ex: C:\xampp\htdocs)
 3. Jalankan XAMPP, start module Apache dan MySQL
@@ -23,7 +23,7 @@ Website pendaftaran lomba yang dibuat untuk memenuhi Tugas Besar ARC 2023.
 2. [Yusuf Ardian Sandi | 19622054](https://github.com/Yusufarsan) (membuat front-end sistem login dan register)
 3. [Sa'ad Abdul Hakim | 19622131](https://github.com/saadabha) (membuat back-end sistem login, register, forget password)
 4. [Muhammad Fadhli | 16522081](https://github.com/Shadepar) (membuat halaman dashboard peserta)
-5. [Muhammad Dava Fathurrahman | 19622160](https://github.com/mdavaf17) (membuat sistem admin dan sistem kode OTP, mengatur kolaborasi github, serta deploy ke hosting)
+5. [Muhammad Dava Fathurrahman | 19622160](https://github.com/mdavaf17) (membuat sistem admin, membuat sistem kode OTP, dan deploy ke hosting)
 
 ## Screenshot Website
 
@@ -31,7 +31,7 @@ Website pendaftaran lomba yang dibuat untuk memenuhi Tugas Besar ARC 2023.
 
 ![registerpage.png](https://i.ibb.co/SKVYt8p/image.png)
 
-![registerpage.png](https://i.ibb.co/k9XFGSD/image.png)
+![registerpage.png](https://i.ibb.co/kDmQWqj/image.png)
 
 ![loginpage.png](https://i.ibb.co/hK0YzJ6/image.png)
 
